@@ -39,14 +39,8 @@ And below is an example of what a single song file, TRAABJL12903CDCF1A.json, loo
 ```
 
 ## Log Dataset
-The second dataset consists of log files in JSON format that have been generated using an event simulator. These log files mimic user activity on a music streaming application and are based on specific configurations.
+The second dataset consists of log files in JSON format that have been generated using an event simulator. These log files mimic user activity on a music streaming application and are based on specific configurations. The files are organized chronologically by year and month.
 
-The log files in this dataset are organized chronologically by year and month. For instance, here are file paths to two log files within this dataset:
-
-```bash
-log_data/2018/11/2018-11-12-events.json
-log_data/2018/11/2018-11-13-events.json
-```
 
 And below is an example of what the data in a log file, 2018-11-12-events.json, looks like.
 
