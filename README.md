@@ -89,7 +89,7 @@ And below is an example of what the data in a log file, 2018-11-12-events.json, 
 
 ### Details of Pipeline
 
-### ETL Pipeline Steps
+####  ETL Pipeline Steps
 
 1. Start by creating a PostgreSQL database called "sparkifydb."
 2. Establish the fact and dimension tables within the "sparkifydb" database, following the structure outlined in the provided schema using `table-creation.py`.
