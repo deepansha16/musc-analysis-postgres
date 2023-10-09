@@ -86,3 +86,20 @@ And below is an example of what the data in a log file, 2018-11-12-events.json, 
 1. Run `table-creation.py` to create database and tables
 2. Run `etl.py` to load data into appropriate tables
 3. Run cells in `test.ipynb` to test that data was loaded correctly
+
+### Details of Pipeline
+
+### ETL Pipeline Steps
+
+1. Start by creating a PostgreSQL database called "sparkifydb."
+2. Establish the fact and dimension tables within the "sparkifydb" database, following the structure outlined in the provided schema using `table-creation.py`.
+3. Extract the necessary data for the songs table from the song dataset using Python and pandas in `etl.py`.
+4. Utilize psycopg2 in `etl.py` and the `song_table_insert` function from `queries.py` to insert the song data into the songs table.
+5. Extract the required information for the artists table from the song dataset using Python and pandas in `etl.py`.
+6. Use psycopg2 in `etl.py` and the `artist_table_insert` function from `queries.py` to insert artist data into the artist table.
+7. Extract the time-related information from the log dataset in `etl.py` and transform it into a pandas datetime object.
+8. Utilize psycopg2 in `etl.py` and the `time_table_insert` function from `queries.py` to insert time data into the time table.
+9. Extract user information from the log dataset in `etl.py`.
+10. Insert user data into the user table using psycopg2 in `etl.py` and the `user_table_insert` function from `queries.py`.
+11. Employ the `select_song` query from `queries.py` in `etl.py` to retrieve the song ID and artist ID for songs in the log dataset and extract the remaining songplay data from the log dataset.
+12. Finally, insert the songplay session-related data into the songplay table using psycopg2 in `etl.py` and the `songplay_table_insert` function from `queries.py`.
