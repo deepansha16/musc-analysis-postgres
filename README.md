@@ -67,3 +67,15 @@ And below is an example of what the data in a log file, 2018-11-12-events.json, 
 }
 
 ```
+
+## Description of Files
+
+* `data folder` - contains the datasets
+
+* `queries.py` - Houses SQL queries responsible for creating tables, inserting data into tables, dropping tables, and executing various other database queries.
+
+* `table-creation.py` - Python script that creates a postgres database containing empty tables
+
+* `etl.py` - Python script that extracts data from JSON files, transforms it to the appropriate data type or format, and loads it into a SQL table
+
+* `test.ipynb` - Jupyter Notebook containing sample queries
