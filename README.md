@@ -79,3 +79,10 @@ And below is an example of what the data in a log file, 2018-11-12-events.json, 
 * `etl.py` - Python script that extracts data from JSON files, transforms it to the appropriate data type or format, and loads it into a SQL table
 
 * `test.ipynb` - Jupyter Notebook containing sample queries
+
+
+## How to Run
+
+1. Run `table-creation.py` to create database and tables
+2. Run `etl.py` to load data into appropriate tables
+3. Run cells in `test.ipynb` to test that data was loaded correctly
